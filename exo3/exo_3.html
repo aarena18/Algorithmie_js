@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercice 3 - Jeu de Nim_allumettes -</title>
+  </head>
+  <body>
+    <!--------- MAIN ------------>
+    <main>
+      <div id="entete">
+        <h5 id="joueur"></h5>
+        <div id="allumImg">
+          Pour lancer la partie, donner un nombre d'allumettes !
+        </div>
+
+        <table>
+          <tr id="imgMatch">
+            <td>
+              <img
+                src="img/match.png"
+                alt="flamme"
+                style="width: 5%; height: 5%"
+              />
+            </td>
+          </tr>
+        </table>
+
+        <div id="initialisation">
+          <button type="button" onclick="Game('imgMatch','allumImg','nb')">
+            Lancer
+          </button>
+          <label> le jeu avec</label>
+          <input type="text" id="nombre" name="nombre" size="5" value="" />
+          <label>allumette(s)</label>
+          <span id="error1"></span>
+        </div>
+      </div>
+    </main>
+    <!--------- LIEN JS ------------>
+    <script type="text/javascript" src="exo_3.js" defer></script>
+  </body>
+</html>
